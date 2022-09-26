@@ -151,8 +151,8 @@ public class SecurityAdvancedSettings extends DashboardFragment {
                 context, lifecycle));
         profileSecurityControllers.add(new FaceProfileStatusPreferenceController(
                 context, lifecycle));
-        profileSecurityControllers.add(new FingerprintProfileStatusPreferenceController(
-                context, lifecycle));
+        /*profileSecurityControllers.add(new FingerprintProfileStatusPreferenceController(
+                context, lifecycle));*/
         profileSecurityControllers
                 .add(new CombinedBiometricProfileStatusPreferenceController(context, lifecycle));
         controllers.add(new PreferenceCategoryController(context, WORK_PROFILE_SECURITY_CATEGORY)

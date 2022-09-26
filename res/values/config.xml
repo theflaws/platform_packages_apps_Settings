@@ -414,7 +414,7 @@
     <bool name="config_show_unlock_set_or_change">true</bool>
 
     <!-- Whether screen_pinning_settings should be shown or not. -->
-    <bool name="config_show_screen_pinning_settings">true</bool>
+    <bool name="config_show_screen_pinning_settings">false</bool>
 
     <!-- Whether manage_trust_agents should be shown or not. -->
     <bool name="config_show_manage_trust_agents">true</bool>

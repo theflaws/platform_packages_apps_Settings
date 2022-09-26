@@ -89,14 +89,14 @@
         android:fragment="com.android.settings.security.trustagent.TrustAgentSettings"
         settings:controller="com.android.settings.security.trustagent.ManageTrustAgentsPreferenceController" />
 
-    <Preference
+    <!-- <Preference
         android:order="80"
         android:key="screen_pinning_settings"
         android:title="@string/screen_pinning_title"
         android:summary="@string/summary_placeholder"
         android:fragment="com.android.settings.security.ScreenPinningSettings"
         settings:keywords="@string/keywords_app_pinning"
-        settings:controller="com.android.settings.security.ScreenPinningPreferenceController" />
+        settings:controller="com.android.settings.security.ScreenPinningPreferenceController" /> -->
 
     <SwitchPreference
         android:order="90"
@@ -128,10 +128,10 @@
             android:key="visiblepattern_profile"
             android:title="@string/lockpattern_settings_enable_visible_pattern_title_profile" />
 
-        <com.android.settingslib.RestrictedPreference
+        <!-- <com.android.settingslib.RestrictedPreference
             android:key="fingerprint_settings_profile"
             android:title="@string/security_settings_work_fingerprint_preference_title"
-            android:summary="@string/summary_placeholder" />
+            android:summary="@string/summary_placeholder" /> -->
 
         <com.android.settingslib.RestrictedPreference
             android:key="face_settings_profile"
