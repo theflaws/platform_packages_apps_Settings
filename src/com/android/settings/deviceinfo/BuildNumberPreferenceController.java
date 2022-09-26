@@ -105,6 +105,7 @@ public class BuildNumberPreferenceController extends BasePreferenceController im
 
     @Override
     public boolean handlePreferenceTreeClick(Preference preference) {
+        return false;
         if (!TextUtils.equals(preference.getKey(), getPreferenceKey())) {
             return false;
         }
