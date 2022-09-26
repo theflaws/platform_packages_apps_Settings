@@ -79,7 +79,7 @@ public class NativeDebugPreferenceController extends AbstractPreferenceControlle
 
         if (mIsAdmin) {
             mNativeDebug = (SwitchPreference) mSecurityCategory.findPreference(PREF_KEY_NATIVE_DEBUG);
-            mNativeDebug.setChecked(SystemProperties.getBoolean(SYS_KEY_NATIVE_DEBUG, true));
+            mNativeDebug.setChecked(SystemProperties.getBoolean(SYS_KEY_NATIVE_DEBUG, /*true*/false));
         } else {
             mSecurityCategory.removePreference(mSecurityCategory.findPreference(PREF_KEY_NATIVE_DEBUG));
         }
