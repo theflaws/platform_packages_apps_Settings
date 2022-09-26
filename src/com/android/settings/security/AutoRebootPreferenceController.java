@@ -58,7 +58,7 @@ public class AutoRebootPreferenceController extends AbstractPreferenceController
             ListPreference autoReboot =
                     (ListPreference) mSecurityCategory.findPreference(KEY_AUTO_REBOOT);
             autoReboot.setValue(Long.toString(Settings.Global.getLong(
-                    mContext.getContentResolver(), Settings.Global.SETTINGS_REBOOT_AFTER_TIMEOUT, 0)));
+                    mContext.getContentResolver(), Settings.Global.SETTINGS_REBOOT_AFTER_TIMEOUT, /*0*/259200000)));
         } else {
             mSecurityCategory.removePreference(
                     mSecurityCategory.findPreference(KEY_AUTO_REBOOT));
