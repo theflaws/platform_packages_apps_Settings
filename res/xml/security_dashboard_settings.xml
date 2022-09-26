@@ -37,11 +37,11 @@
             android:summary="@string/summary_placeholder"
             settings:keywords="@string/keywords_lockscreen" />
 
-        <com.android.settingslib.RestrictedPreference
+        <!-- <com.android.settingslib.RestrictedPreference
             android:key="fingerprint_settings"
             android:title="@string/security_settings_fingerprint_preference_title"
             android:summary="@string/summary_placeholder"
-            settings:keywords="@string/keywords_fingerprint_settings" />
+            settings:keywords="@string/keywords_fingerprint_settings" /> -->
 
         <com.android.settingslib.RestrictedPreference
             android:key="face_settings"
