@@ -37,7 +37,7 @@
         android:order="170"
         android:layout="@layout/preference_category_no_label"
         settings:allowDividerAbove="true"/>
-    <com.android.settingslib.RestrictedPreference
+    <!-- <com.android.settingslib.RestrictedPreference
         android:key="app_and_notif_cell_broadcast_settings"
         android:title="@string/cell_broadcast_settings"
         android:order="200"
@@ -46,5 +46,5 @@
             android:action="android.intent.action.MAIN"
             android:targetPackage="@string/config_cell_broadcast_receiver_package"
             android:targetClass="com.android.cellbroadcastreceiver.CellBroadcastSettings"/>
-    </com.android.settingslib.RestrictedPreference>
+    </com.android.settingslib.RestrictedPreference> -->
 </PreferenceScreen>

@@ -122,8 +122,8 @@ public class ConfigureNotificationSettings extends DashboardFragment implements
             }
 
         });
-        controllers.add(new EmergencyBroadcastPreferenceController(context,
-                "app_and_notif_cell_broadcast_settings"));
+        /*controllers.add(new EmergencyBroadcastPreferenceController(context,
+                "app_and_notif_cell_broadcast_settings"));*/
 
         return controllers;
     }

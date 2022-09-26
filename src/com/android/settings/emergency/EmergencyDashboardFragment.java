@@ -61,7 +61,7 @@ public class EmergencyDashboardFragment extends DashboardFragment {
 
     private static List<AbstractPreferenceController> buildPreferenceControllers(Context context) {
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
-        controllers.add(new EmergencyBroadcastPreferenceController(context, WEA_PREF_KEY));
+        // controllers.add(new EmergencyBroadcastPreferenceController(context, WEA_PREF_KEY));
         return controllers;
     }
 
