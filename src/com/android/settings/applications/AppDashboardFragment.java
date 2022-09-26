@@ -66,7 +66,7 @@ public class AppDashboardFragment extends DashboardFragment {
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        use(SpecialAppAccessPreferenceController.class).setSession(getSettingsLifecycle());
+        // use(SpecialAppAccessPreferenceController.class).setSession(getSettingsLifecycle());
         mAppsPreferenceController = use(AppsPreferenceController.class);
         mAppsPreferenceController.setFragment(this /* fragment */);
         getSettingsLifecycle().addObserver(mAppsPreferenceController);

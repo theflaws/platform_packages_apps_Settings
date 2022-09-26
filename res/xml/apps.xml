@@ -76,12 +76,12 @@
         <intent android:action="android.intent.action.MANAGE_UNUSED_APPS"/>
     </Preference>
 
-    <Preference
+    <!-- <Preference
         android:key="special_access"
         android:fragment="com.android.settings.applications.specialaccess.SpecialAccessSettings"
         android:title="@string/special_access"
         android:order="20"
-        settings:controller="com.android.settings.applications.SpecialAppAccessPreferenceController"/>
+        settings:controller="com.android.settings.applications.SpecialAppAccessPreferenceController"/> -->
 
     <Preference
         android:key="sandboxed_google_play"
