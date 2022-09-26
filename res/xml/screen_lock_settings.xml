@@ -36,8 +36,8 @@
         android:entryValues="@array/lock_after_timeout_values" />
 
     <!-- available in pin/pattern/password -->
-    <SwitchPreference
+    <!-- <SwitchPreference
         android:key="power_button_instantly_locks"
-        android:title="@string/lockpattern_settings_enable_power_button_instantly_locks" />
+        android:title="@string/lockpattern_settings_enable_power_button_instantly_locks" /> -->
 
 </PreferenceScreen>
