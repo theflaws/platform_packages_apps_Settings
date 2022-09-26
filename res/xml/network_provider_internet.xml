@@ -77,7 +77,7 @@
         settings:userRestriction="no_config_mobile_networks"
         settings:useAdminDisabledSummary="true" />
 
-    <com.android.settingslib.RestrictedPreference
+    <!-- <com.android.settingslib.RestrictedPreference
         android:fragment="com.android.settings.TetherSettings"
         android:key="tether_settings"
         android:title="@string/tether_settings_title_all"
@@ -105,7 +105,7 @@
         android:title="@string/data_saver_title"
         android:icon="@drawable/ic_settings_data_usage"
         android:order="10"
-        android:fragment="com.android.settings.datausage.DataSaverSummary"/>
+        android:fragment="com.android.settings.datausage.DataSaverSummary"/> -->
 
     <com.android.settings.vpn2.VpnInfoPreference
         android:fragment="com.android.settings.vpn2.VpnSettings"
@@ -117,14 +117,14 @@
         settings:userRestriction="no_config_vpn"
         settings:useAdminDisabledSummary="true" />
 
-    <com.android.settings.network.PrivateDnsModeDialogPreference
+    <!-- <com.android.settings.network.PrivateDnsModeDialogPreference
         android:key="private_dns_settings"
         android:title="@string/select_private_dns_configuration_title"
         android:order="20"
         android:dialogTitle="@string/select_private_dns_configuration_dialog_title"
         android:dialogLayout="@layout/private_dns_mode_dialog"
         android:positiveButtonText="@string/save"
-        android:negativeButtonText="@android:string/cancel" />
+        android:negativeButtonText="@android:string/cancel" /> -->
 
     <Preference
         android:fragment="com.android.settings.network.AdaptiveConnectivitySettings"

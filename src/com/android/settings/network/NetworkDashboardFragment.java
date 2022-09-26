@@ -70,13 +70,13 @@ public class NetworkDashboardFragment extends DashboardFragment implements
         super.onAttach(context);
 
         use(AirplaneModePreferenceController.class).setFragment(this);
-        getSettingsLifecycle().addObserver(use(AllInOneTetherPreferenceController.class));
+        // getSettingsLifecycle().addObserver(use(AllInOneTetherPreferenceController.class));
     }
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         super.onCreatePreferences(savedInstanceState, rootKey);
-        use(AllInOneTetherPreferenceController.class).initEnabler(getSettingsLifecycle());
+        // use(AllInOneTetherPreferenceController.class).initEnabler(getSettingsLifecycle());
     }
 
     @Override
@@ -100,13 +100,13 @@ public class NetworkDashboardFragment extends DashboardFragment implements
 
         final VpnPreferenceController vpnPreferenceController =
                 new VpnPreferenceController(context);
-        final PrivateDnsPreferenceController privateDnsPreferenceController =
-                new PrivateDnsPreferenceController(context);
+        /*final PrivateDnsPreferenceController privateDnsPreferenceController =
+                new PrivateDnsPreferenceController(context);*/
 
         if (lifecycle != null) {
             lifecycle.addObserver(mobilePlanPreferenceController);
             lifecycle.addObserver(vpnPreferenceController);
-            lifecycle.addObserver(privateDnsPreferenceController);
+            // lifecycle.addObserver(privateDnsPreferenceController);
         }
 
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
@@ -119,11 +119,11 @@ public class NetworkDashboardFragment extends DashboardFragment implements
         if (internetPreferenceController != null) {
             controllers.add(internetPreferenceController);
         }
-        controllers.add(privateDnsPreferenceController);
+        // controllers.add(privateDnsPreferenceController);
         controllers.add(new NetworkProviderCallsSmsController(context, lifecycle));
-        ConnectivityCheckPreferenceController connectivityCheck =
+        /*ConnectivityCheckPreferenceController connectivityCheck =
                 new ConnectivityCheckPreferenceController(context);
-        controllers.add(connectivityCheck);
+        controllers.add(connectivityCheck);*/
         AttestProvisioningPreferenceController attestProvisioning =
                 new AttestProvisioningPreferenceController(context);
         controllers.add(attestProvisioning);
